@@ -1,5 +1,6 @@
 package com.example.calculatorapplication;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -49,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    @SuppressLint("SetTextI18n")
     private void calculateResult(String operation) {
         String num1Str = etNumber1.getText().toString();
         String num2Str = etNumber2.getText().toString();
